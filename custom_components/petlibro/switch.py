@@ -47,10 +47,31 @@ DEVICE_SWITCH_MAP: dict[type[Device], list[PetLibroSwitchEntityDescription]] = {
     Feeder: [
     ],
     AirSmartFeeder: [
+        PetLibroSwitchEntityDescription[AirSmartFeeder](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     GranarySmartFeeder: [
+        PetLibroSwitchEntityDescription[GranarySmartFeeder](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     GranarySmartCameraFeeder: [
+        PetLibroSwitchEntityDescription[GranarySmartCameraFeeder](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     OneRFIDSmartFeeder: [
     ],
@@ -61,16 +82,58 @@ DEVICE_SWITCH_MAP: dict[type[Device], list[PetLibroSwitchEntityDescription]] = {
             set_fn=lambda device, value: device.set_manual_feed_now(value, device.plate_position),
             name="Manually Open/Close Lid"
         ),
+        PetLibroSwitchEntityDescription[PolarWetFoodFeeder](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     SpaceSmartFeeder: [
+        PetLibroSwitchEntityDescription[SpaceSmartFeeder](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     DockstreamSmartFountain: [
+        PetLibroSwitchEntityDescription[DockstreamSmartFountain](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     DockstreamSmartRFIDFountain: [
+        PetLibroSwitchEntityDescription[DockstreamSmartRFIDFountain](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     Dockstream2SmartCordlessFountain: [
+        PetLibroSwitchEntityDescription[Dockstream2SmartCordlessFountain](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     Dockstream2SmartFountain: [
+        PetLibroSwitchEntityDescription[Dockstream2SmartFountain](
+            key="light_switch",
+            translation_key="indicator",
+            icon="mdi:lightbulb",
+            set_fn=lambda device, value: device.set_light_on() if value else device.set_light_off(),
+            name="Indicator",
+        ),
     ],
     LumaSmartLitterBox: [
         PetLibroSwitchEntityDescription[LumaSmartLitterBox](

@@ -310,6 +310,9 @@
             },
             "sterilization": {
                 "name": "Sterilizzato/Castrato"
+            },
+            "indicator": {
+                "name": "Indicatore"
             }
         },
         "button": {
@@ -357,12 +360,6 @@
             },
             "reposition_schedule": {
                 "name": "Riposiziona programma"
-            },
-            "light_on": {
-                "name": "Accendi indicatore"
-            },
-            "light_off": {
-                "name": "Spegni indicatore"
             },
             "cleaning_reset": {
                 "name": "Reset pulizia"
@@ -428,9 +425,6 @@
             },
             "display_switch": {
                 "name": "Stato display"
-            },
-            "light_switch": {
-                "name": "Indicatore"
             },
             "power_state": {
                 "name": "Stato alimentazione"
